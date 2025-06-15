@@ -1,0 +1,2312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    content: inherit;
+    /* text-decoration: none; */
+}
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 64px;
+    padding: 0px 32px;
+    box-shadow: 0 1px 12px rgba(29, 29, 29, .102);
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 222;
+    display: flex;
+    
+}
+
+
+
+.logo{
+    width: 56px;
+    height: 56px;
+    margin-right: 32px;
+}
+
+header ul{
+    display: flex;
+}
+
+.bus-ticket{
+    width: 104px;
+    height: 64px;
+    /* border: 2px solid red; */
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d63941;
+    font-size: 11px;
+    letter-spacing: .05px;
+    line-height: 16px;
+    font-weight: 500;
+    gap: 4px;
+    
+}
+
+.train-ticket{
+    width: 104px;
+    height: 64px;
+    /* border: 2px solid red; */
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d63941;
+    font-size: 11px;
+    letter-spacing: .05px;
+    line-height: 16px;
+    font-weight: 500;
+    gap: 4px;
+    filter: grayscale(1) brightness(0);
+}
+
+.train-ticket:hover{
+    filter: none;
+}
+
+.redbus-info{
+    height: 100%;
+    /* border: 2px solid red; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    
+}
+
+.info-section{
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    color: #1d1d1d;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    gap: 5px;
+    
+}
+.home-banner{
+    width: 100%;
+    height: 350px;
+    /* border: 2px solid red; */
+    background-image: url(../images/HomeBanner.webp);
+    background-size: cover;
+    background-repeat: round;
+      
+}
+
+.home-banner h1{
+    width: 1230px;
+    height: 104px;
+    position: relative;
+    top: 110px;
+    left: 100px;
+    padding: 32px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.search{
+    width: 100%;
+    height: 130px;
+    /* border: 2px solid black; */
+    position: relative;
+    
+}
+.search-box{
+    width: 1216px;
+    height: 126px;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin: -64px auto 48px auto;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    
+}
+
+.search-box-left{
+    width: 896px;
+    height: 66px;
+    /* border: 1px solid #B0B0B0; */
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.search-box-right{
+    width: 280px;
+    height: 66px;
+    border: 1px solid #B0B0B0;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 16px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.input-box1{
+    width: 273px;
+    height: 64.4px;
+    border: 1px solid #B0B0B0;
+    border-radius: 16px 0px 0px 16px ; 
+    
+}
+
+.input-box1 i{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.input-box1 span{
+    margin-top: 20px;
+    padding-left: 30px;
+    color: #6b6b6b;
+}
+
+.input-box2{
+    width: 273px;
+    height: 64.4px;
+    border: 1px solid #B0B0B0;
+    border-left: none;
+}
+
+.input-box2 i{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.input-box2 span{
+    margin-top: 20px;
+    padding-left: 30px;
+    color: #6b6b6b;
+}
+
+.calendar{
+    width: 346px;
+    height: 64.4px;
+    border: 1px solid #B0B0B0;
+    border-radius: 0px 16px 16px 0px;
+    border-left: none;
+}
+
+.calendar i{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.calendar span{
+    margin-top: 20px;
+    padding-left: 30px;
+    color: #6b6b6b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-box-right img{
+    width: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.search-box-right--text{
+    margin-top: 20px;
+    /* padding-left: 10px; */
+    color: #6b6b6b;
+}
+
+.search-box-right i{
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.search-buses{
+    width: 300px;
+    height: 48px;
+    background-color: #d63941;
+    margin: auto;
+    border-radius: 999px;
+    margin: -70px auto 48px auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+section{
+    width: 100%;
+    height: 1767px;
+    margin-top: 40px;
+    /* border: 2px solid red;
+    background-color: red; */
+}
+
+.festive-content{
+    /* margin-top: 20px; */
+    width: 1216px;
+    height: 173px;
+    /* border: 2px solid yellow; */
+    margin: auto; 
+}
+
+.festive-top-content{
+    width: 1256px;
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.festive-title{
+    width: 300px;
+    height: 50px;
+    /* border: 2px solid green; */
+}
+
+.festive-title span{
+    color: #1d1d1da3;
+    font-size: 14px;
+}
+
+.festive-bottom-content{
+    width: 1216px;
+    height: 101px;
+    /* border: 2px solid green; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 20px;
+    background-color: #a0a0a300;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.festive-bottom-left-content{
+    width: 900px;
+    height: 56px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.festive-bottom-right-content{
+    width: 300px;
+    height: 68px;
+    /* border: 2px solid green; */
+}
+
+.festive-bottom-right-content button{
+    width: 263px;
+    height: 65px;
+    align-items: center;
+    background-color: #fed9d5;
+    border: none;
+    border-radius: 999px;
+    color: #1d1d1d;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 10px;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    outline: none;
+    padding: 0 12px;
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.festive-bottom-right-content-text{
+    text-align: center;
+    color: #1d1d1da3;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+.festive-offer{
+    width: 900px;
+    height: 56px;
+    /* border: 2px solid rgb(210, 63, 88); */
+    display: flex;
+}
+.offer-text{
+    width: 300px;
+    height: 24px;
+    /* border: 2px solid black; */
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.offer-calendar{
+    width: 374px;
+    height: 56px;
+    /* border: 2px solid rgb(204, 29, 29); */
+    display: flex;
+    gap: 10px;
+}
+
+.offer-calendar-card{
+    width: 80px;
+    height: 56px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.socialproofingcontent{
+    width: 100%;
+    height: 160px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADF2B3;
+    margin-top: 10px;
+}
+
+.socialproofingcontent-text h3{
+    width: 395px;
+    height: 28px;
+    /* border: 2px solid red; */
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.socialproofingcontent-text span{
+    font-size: 14px;
+    font-weight: 400;
+} 
+
+.offersectioncontent{
+    width: 1280px;
+    height: 336px;
+    /* background-color: aqua; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+.offersectioncontent-top{
+    width: 1248px;
+    height: 72px;
+    /* border: 2px solid red; */
+    
+}
+
+.offersectioncontent-top span{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-right: 700px;
+}
+
+.offersectioncontent-top a{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 300px;
+    color: blue;
+    /* border-bottom: 2px solid blue; */
+}
+
+.offersectioncontent-middle{
+    width: 100%;
+    height: 48px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 15px;
+}
+
+.all-button{
+    width: 48px;
+    height: 33px;
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+}
+
+.all-button span{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 8px;
+    
+}
+
+.all-button:nth-child(1){
+    background-color: pink;
+}
+
+.offersectioncontent-bottom{
+    width: 100%;
+    height: 216px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 20px;
+    
+}
+
+.offersectioncontent-bottom-card{
+    width: 300px;
+    height: 190px;
+    padding: 10px;
+    margin-top: 10px;
+    /* border: 2px solid rgb(207, 19, 50); */
+    background-image: url(../images/sampleimage1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.offersectioncontent-bottom-card:nth-child(3){
+    background-image: url(../images/Android-300_240\ ICICI\ copy\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offersectioncontent-bottom-card:nth-child(4){
+    background-image: url(../images/offerFallback.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-topsection{
+    width: 42px;
+    height: 24px;
+    background-color: #3c393960;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-titlesection{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.card-validity{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 12px;
+
+}
+
+.card-button{
+    width: 135px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 999px;
+    margin-top: 40px;
+}
+
+.card-button button{
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.card-button i{
+    width: 24px;
+    height: 24px;
+}
+
+
+.whatsnew{
+    width: 100%;
+    height: 250px;
+    /* border: 2px solid red; */
+}
+
+.whatsnew-text{
+    width: 856px;
+    height: 28px;
+    /* border: 2px solid darkorchid; */
+    margin: 20px 120px;
+}
+
+.whatsnew-text span{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.whatsnew-row{
+    width: 1260px;
+    height: 180px;
+    /* border: 2px solid orange; */
+    display: flex;
+    gap: 10px;
+    margin: auto;
+}
+
+.whatsnew-card{
+    width: 307px;
+    height: 170px;
+    /* background-color: green; */
+}
+
+.rtcCardContainer{
+    width: 1280px;
+    height: 335px;
+    /* border: 2px solid aqua; */
+    margin: auto;
+}
+
+.rtcCardContainer-text{
+    width: 1248px;
+    height: 64px;
+    /* border: 2px solid black; */
+    margin-top: 10px;
+}
+
+.rtcCardContainer-text span{
+    font-size: 22px;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.rtcCardContainer-row{
+    width: 100%;
+    height: 252px;
+    /* border: 2px solid rgb(93, 10, 177); */
+    display: flex;
+    gap: 20px;
+}
+
+.rtcCardContainer-row-card{
+    width: 296px;
+    height: 252px;
+    /* border: 2px solid red; */
+    /* padding: 16px; */
+    box-shadow: 0px 1px 12px 0px #1D1D1D1A;
+    background-color: #FAE7E8;
+    border-radius: 16px;
+
+}
+
+.rtcCardContainer-row-card-header{
+    width: 296px;
+    height: 84px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 16px 16px 0px 0px;
+}
+
+
+
+.rtcCardContainer-row-card-text{
+    width: 250px;
+    height: 50px;
+    /* border: 2px solid red; */
+    
+}
+
+.rtcCardContainer-row1-card-text{
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.rtcCardContainer-row-card-text span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.bus-rating{
+    width: 52px;
+    height: 20px;
+    background-color: #007B2D;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.bus-rating i{
+    color: #fff;
+    font-size: 10px;
+}
+
+
+.bus-rating span{
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.row-card-vernac{
+    margin-top: 4px;
+    color: #1d1d1da3;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rtcCardContainer-details{
+    width: 296px;
+    height: 123px;
+    /* border: 2px solid darkred; */
+    border-radius: 0px 0px 16px 16px;
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.rtcCardContainer-services-details{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #1d1d1d;
+}
+
+
+
+.rtcCardContainer-partner-details{
+    width: 275px;
+    height: 28px;
+    background-color: #f2f2f8;
+    border-radius: 8px;
+    padding: 0px 8px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.rtcCardContainer-slideshow{
+    width: 310px;
+    height: 40px;
+    /* border: 2px solid red; */
+    font-size: 12px;
+    font-weight: 700;
+    color: #1d1d1d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.testimonialscontainer{
+    width: 1280px;
+    height: 248px;
+    margin: 30px auto;
+}
+
+.testimonialscontainer-row{
+    width: 1280px;
+    height: 181px;
+    /* border: 2px solid orange; */
+    display: flex;
+    gap: 10px;
+}
+
+.testimonialscontainer-text b{
+    font-size: 22px;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.testimonialscontainer-text span{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.08;
+    line-height: 20px;
+}
+
+.testimonialscontainer-row-card{
+    width: 220px;
+    height: 160px;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+.testimonialscontainer-row-card-text{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    
+}
+
+
+.testimonialscontainer-customerinfo{
+    width: 170px;
+    height: 36px;
+    /* border: 2px solid rebeccapurple; */
+    margin-top: 50px;
+}
+
+.customerinfo-name{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -.08px;
+    line-height: 20px;
+}
+
+.customerinfo-since{
+    color: rgba(29, 29, 29, .639);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+
+
+.appinstallcontainer{
+    width: 1280px;
+    height: 161px;
+    /* border: 2px solid #b1a3a4; */
+    margin: auto;
+}
+
+.appinstallcontainer-text span{
+    color: #1d1d1d;
+    font-weight: 700; 
+    font-size: 22px;
+}
+
+.appinstallcontainer-row{
+    width: 1280px;
+    height: 100px;
+    box-shadow: 0px 1px 12px 0px #1D1D1D1A;
+    border-radius: 16px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.appinstallcontainer-row img{
+    width: 62px;
+    height: 65px;
+    /* border: 2px solid red; */
+}
+
+.appinstallcontainer-row-text{
+    width: 802px;
+    height: 44px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+.appinstallcontainer-row-text span:nth-child(1){
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.appinstallcontainer-row-text span:nth-child(2){
+    color: #1d1d1da3;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.appinstallcontainer-button{
+    width: 300px;
+    height: 48px;
+    background-color: #fed9d5;
+    margin-left: 40px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appinstallcontainer-button button{
+    border: none;
+    background-color: #fed9d5;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seopartcontainer{
+    width: 100%;
+    height: 1770px;
+    /* background-color: #ADF2B3; */
+}
+
+.paragraphpartial{
+    width: 1280px;
+    height: 550px;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.paragraphpartial h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    /* padding: 12px 0px; */
+}
+
+
+.paragraphcontent{
+    width: 1280px;
+    /* height: 560px; */
+    /* border: 2px solid hotpink; */
+    color: rgba(29, 29, 29, 0.639);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.08px;
+    line-height: 20px
+    
+}
+.paragraphcontent ul{
+    padding-inline-start: 48px;
+}
+
+
+.seoreddealpartial{
+    width: 1280px;
+    height: 165px;
+    /* border: 2px solid firebrick; */
+    margin: auto;
+}
+.seoreddealpartial h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 28px
+}
+
+.seoreddealpartial p{
+    color: #1d1d1da3;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08px;
+    line-height: 20px;
+}
+
+.reddealcard{
+    width: 1280px;
+    height: 82px;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    color: #1d1d1d;
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    padding: 16px;
+}
+
+.reddeal-maincontent{
+    width: 888px;
+    height: 48px;
+    /* background-color: orange; */
+}
+.title{
+    font-weight: 700;
+    letter-spacing: -0.18px;
+    line-height: 24px;
+    font-size: 14.4px;
+}
+.stats{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.book-now-button{
+    width: 296px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #d63941;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    font-weight: 700;
+    border: none;
+    padding: 0 20px;
+}
+
+.faqcontainer{
+    width: 1280px;
+    height: 584px;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.faqcontainer h2{
+    color: #1d1d1d;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+
+.tabcontent{
+    width: 1280px;
+    height: 48px;
+    border-bottom: 1px solid #1D1D1D1A;
+    display: flex;
+    gap: 20px;
+
+}
+
+.sectiontab{
+    width: 85px;
+    height: 48px;
+    color: #1d1d1d;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 3px solid #d63941;
+}
+
+.sectioncontent{
+    width: 1280px;
+    height: 416px;
+    /* border: 2px solid red; */
+}
+
+.faqcard{
+    width: 1280px;
+    height: 51px;
+    border-bottom: 1px solid #1D1D1D1A;
+    display: flex;
+    
+}
+
+.faqcard span{
+    width: 900px;
+    height: 24px;
+    /* border: 2px solid pink; */
+    margin-top: 15px;
+}
+
+.faqcard i{
+    margin-top: 15px;
+    padding-left: 300px;
+}
+
+.footer{
+    width: 100%;
+    height: 858px;
+    border-top: 1px solid rgba(0, 17, 102, 0.1019607843);
+    background: #f2f2f8;
+    margin-top: 40px;
+}
+
+.footercontainer{
+    width: 1280px;
+    height: 857px;
+    margin: auto;
+    padding-top: 34px;
+    /* border: 2px solid red; */
+}
+
+.bus-routes{
+    width: 1248px;
+    height: 70px;
+    border-bottom: 1px solid #1D1D1D1A;
+    display: flex;
+}
+
+.bus-routes h3{
+    width: 1200px;
+    height: 60px;
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 25px 16px;
+    
+}
+.bus-routes i{
+    padding: 25px 16px;
+}
+
+
+.footercontent{
+    width: 1280px;
+    height: 496px;
+    /* border: 2px solid darkmagenta; */
+    display: flex;
+    padding-top: 24px;
+    justify-content: space-between;
+}
+
+.about-redbus{
+    width: 136px;
+    height: 232px;
+    /* border: 2px solid red; */
+
+}
+.about-redbus h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    padding: 8px 12px;
+}
+
+.about-redbus-links{
+    width: 136px;
+    height: 192px;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+.about-redbus-links a{
+    height: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.18px;
+    color: #4040f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.Info{
+    width: 205px;
+    height: 472px;
+    /* border: 2px solid red; */
+}
+
+.Info h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    padding: 8px 12px;
+    
+}
+
+.info-links{
+    width: 250px;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    /* border: 2px solid green; */
+}
+
+.info-links a{
+    height: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.18px;
+    color: #4040f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Global-Sites{
+    width: 122px;
+    height: 472px;
+    /* border: 2px solid red; */
+}
+
+.Global-Sites h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    padding: 8px 12px;
+    
+}
+
+.Global-Sites-links{
+    width: 122px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.Global-Sites-links a{
+    height: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.18px;
+    color: #4040f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Our-Partners{
+    width: 166px;
+    height: 472px;
+    /* border: 2px solid red; */
+}
+.Our-Partners h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    padding: 8px 12px;
+}
+
+.Our-Partners-links{
+    width: 166px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.Our-Partners-links a{
+    height: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.18px;
+    color: #4040f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.aboutcontainer{
+    width: 1280px;
+    height: 123px;
+    padding: 56px 16px 24px;
+    border-bottom: 1px solid #1D1D1D1A;
+    display: flex;
+    gap: 10px;
+}
+
+.aboutcontainer p{
+    color: rgba(29, 29, 29, 0.64);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08px;
+    margin-top: 10px;
+}
+
+.socialcontainer{
+    width: 1280px;
+    height: 76px;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    padding: 24px 0px 16px 0px;
+    margin: 0px 16px
+}
+
+.socialcontainer span{
+    width: 950px;
+    height: 20px;
+    /* border: 2px solid red; */
+    color: rgba(29, 29, 29, 0.64);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08px;
+}
+
+.social-links{
+    width: 200px;
+    height: 36px;
+    /* border: 2px solid red; */
+    margin-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* train page start */
+
+
+.train-home-banner{
+    width: 100%;
+    height: 350px;
+    /* border: 2px solid red; */
+    background-image: url(https://www.redbus.in/rails/public/images/banner.svg);
+    background-size: cover;
+    background-repeat: round;
+}
+
+.train-home-banner h1{
+    width: 768px;
+    height: 52px;
+    position: relative;
+    top: 90px;
+    left: 100px;
+    padding: 32px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+
+
+.irctctext-train{
+    color: #fdfdfd;
+    font-size: 22px;
+    font-weight: 400;
+    position: absolute;
+    top: -96px;
+    left: 95px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0px 32px;
+    /* border: 2px solid rgb(73, 5, 5); */
+}
+
+.irctcbooking-train{
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: -39px;
+    left: 153.4px;
+    padding: 8px 16px 32px 16px;
+    border-radius: 16px 16px 0px 0px;
+    background: linear-gradient(273deg, #fbeaac 4.55%, #e0eded 100%);
+    overflow: hidden;
+    align-items: center;
+}
+
+.search-box-train{
+    width: 1213px;
+    height: 115px;
+    margin: auto;
+    border-radius: 0px 24px;
+    margin: -64px auto 48px auto;
+    background: linear-gradient(273deg, #fbeaac 4.55%, #e0eded 100%);
+}
+
+
+.train-card-section{
+    width: 100%;
+    height: 1125px;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+}
+
+.train-status-container{
+    width: 100%;
+    height: 163px;
+    background-color: #f2f2f8;
+    padding: 24px 0px;
+}
+
+.status-card-content{
+    width: 1240px;
+    height: 160px;
+    /* border: 2px solid black; */
+    margin:  auto;
+    display: flex;
+    gap: 12px;
+    
+}
+
+
+.train-status-card{
+    width: 295px;
+    height: 112px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1d1d1d;
+    gap: 15px;
+}
+
+
+.redreail-train-book{
+    width: 1280px;
+    height: 198px;
+    /* border: #007B2D 2px solid; */
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.redrail-book-heading{
+    width: 1280px;
+    height: 64px;
+    /* border: 2px solid red; */
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redrail-book-heading .title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.redrail-book-heading button{
+    width: 80px;
+    height: 40px;
+    background-color: #fed9d5;
+    border: none;
+    border-radius: 999px;
+    color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.carouseWrapper{
+    width: 1280px;
+    height: 134px;
+    /* border: 2px solid blue; */
+    padding: 8px 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.carouseWrapper-card{
+    width: 323px;
+    height: 118px;
+    /* border: 2px solid purple; */
+    box-shadow: 0 1px 12px rgba(29, 29, 29, .102);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+
+.carouseWrapper-card .title{
+    width: 150px;
+    height: 24px;
+    /* border: 2px solid  red; */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #d63941;
+    
+}
+
+.carouseWrapper-card .title p{
+    width: 189px;
+    height: 40px;
+    /* border: 2px solid black; */
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+    line-height: 20px;
+}
+
+
+
+.train-offersection{
+    width: 1280px;
+    height: 295px;
+    /* border: 2px solid red; */
+    padding: 12px 0px;
+    margin-top: 20px;
+
+}
+
+.train-offersection-title{
+    width: 1248px;
+    height: 60px;
+    padding: 12px 0px;
+    /* border: 2px solid black; */
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+
+.offers-row{
+    width: 1280px;
+    height: 223px;
+    /* border: 2px solid orange; */
+    padding: 8px 0px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.offers-row-card{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    background-image: url(../images/offerFallback.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+.train-video-container{
+    width: 1280px;
+    height: 221px;
+    /* border: 2px solid yellow; */
+    margin-top: 20px;
+}
+
+
+.video-text h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 0px;
+}
+
+.video-content{
+    width: 1280px;
+    height: 169px;
+    /* border: 2px solid red; */
+    padding: 8px 16px;
+    display: flex;
+    gap: 12px;
+}
+
+
+.videoCardMain{
+    width: 124px;
+    height: 153px;
+    /* border: 2px solid blue; */
+    border-radius: 16px;
+
+}
+
+.videoTutorial{
+    width: 124px;
+    height: 153px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 12px rgba(29, 29, 29, .102);
+    gap: 16px;
+
+}
+
+.videoTutorial .title{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+}
+
+.thumbNailImg{
+    width: 124px;
+    height: 86px;
+    background-image: url(https://st.redbus.in/Images/redrail/booking1.png);
+    background-size: 100%;
+    background-repeat: round;
+    background-position: 50%;
+    /* border: 2px solid black; */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+
+.playlogo{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding-left: 3px;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -56px;
+    left: 33%;
+}
+
+.playlogo i{
+    font-size: 14px;
+    align-items: center;
+}
+
+.seo-part-container{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.route-wrapper{
+    width: 1280px;
+    height: 763 px;
+    border: 1px solid #b0b0b0;
+    margin: auto;
+    border-radius: 16px;
+   
+}
+
+.route-wrapper .title h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 16px;
+}
+
+.route-details{
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    
+}
+
+.route-details .text{
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+.route-details button{
+    width: 120px;
+    height: 45px;
+    background-color: #fed9d5;
+    border: none;
+    color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    padding: 0px 12px;
+    border-radius: 999px;
+    gap: 4px;
+}
+
+.divider-line{
+    width: 1280px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.testimonialsCards{
+    width: 1280px;
+    height: 240px;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    padding: 16px 0px;
+}
+
+.testimonialsCards .title h2{
+    color: #1d1d1d;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+
+}
+
+.Carouse-Wrapper{
+    width: 1280px;
+    height: 176px;
+    /* border: 2px solid red; */
+    margin-top: 16px;
+    padding: 8px 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.Carouse-Wrapper-card{
+    width: 220px;
+    height: 160px;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.Carouse-Wrapper-card-text{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.Customer-Name{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.Paragraph-Partial{
+    width: 1280px;
+    height: 132px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid blueviolet; */
+}
+
+.Paragraph-Partial h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 0px;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.Paragraph-Partial p{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.guide-online-booking{
+    width: 100%;
+    height: 562px;
+    background-color: #f2f2f8;
+    margin-top: 20px;
+}
+
+.StepGuideWrap{
+    width: 1280px;
+    height: 562px;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+
+.StepGuideWrap h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 0px;
+}
+
+.StepGuideWrap p{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.stepguidecard{
+    width: 1280px;
+    height: 490px;
+    /* border: 2px solid rebeccapurple; */
+    padding: 32px 48px;
+    display: flex;
+    gap: 24px;
+}
+
+.stepguidecard-right{
+    width: 890px;
+    height: 426px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stepItem{
+    background-color: #fff;
+    border: 1px solid #b0b0b0;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.StepHead{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.stepItem p{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.IRTCT-Rail-Booking{
+    width: 1280px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.IRTCT-Rail-Booking h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0;
+}
+
+.Rail-MainContent{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.Rail-MainContent ul{
+    margin-top: 16px;
+    padding-inline-start: 45px;
+}
+
+.PNR-status-Check{
+    width: 1280px;
+    height: 232px;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+.PNR-status-Check h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 0px;
+    line-height: 20px;
+    
+}
+
+.PNR_MainContent{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.Ticket-Booking-Timing{
+    width: 1280px;
+    height: 285px;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.Ticket-Booking-Timing h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.Ticket-Booking-Timing p{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 12px;
+    text-align: justify;
+}
+
+.table{
+    width: 1216px;
+    /* border: 2px solid red; */
+    height: 155px;
+    background-color: #F2F2F8;
+    border: 1px solid #E5E5E5;
+    border-radius: 16px;
+    border-spacing: 0;
+    margin-top: 10px;
+    
+}
+
+.table-header{
+    width: 1214px;
+    height: 44px;
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.table-header th:nth-child(1){
+    width: 319px;
+    height: 44px;
+    border-left: none;
+    padding: 12px;
+    text-align: left;
+}
+
+.table-header th:nth-child(2){
+    width: 894px;
+    height: 44px;
+    border-top: none;
+    border-left: 1px solid #E5E5E5;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 500px;
+    background-color: #ffffff;
+    border-top: 1px solid #E5E5E5;
+
+}
+ 
+
+
+tbody tr td:nth-child(1){
+    width: 222px;
+    height: 64px;
+    border-top: 1px solid #E5E5E5;
+    padding: 12px;
+}
+
+
+tbody tr td:nth-child(2){
+    width: 222px;
+    height: 64px;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    /* border-bottom: 1px solid #E5E5E5;  */
+    padding: 12px;
+    
+}
+
+
+
+.Ticket-Cancellagtion{
+    width: 1280px;
+    height: 172px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: red 2px solid; */
+}
+
+.Ticket-Cancellagtion h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.Cancellation-details{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+.Online-Cancel-Booking{
+    width: 1280px;
+    height: 332px;
+    /* border: 2px solid blue; */
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.Online-Cancel-Booking h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px ;
+}
+
+.Cancel-Booking-details{
+    width: 1280px;
+    height: 320px;
+    /* border: 2px solid teal; */
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.Cancel-Booking-details h3{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 16px 0px;
+}
+
+.Cancel-Booking-details ul{
+    padding-inline-start: 40px;
+    margin: 16px;
+}
+
+.tablePartial{
+    width: 1280px;
+    height: 390px;
+    margin: auto;
+    /* border: 2px solid #007B2D; */
+    margin-top: 20px;
+
+}
+
+.tablePartial h2{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+    color: #1d1d1d;
+}
+
+.tablePartial p{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 24px;
+    text-align: justify;
+}
+
+.table-Content{
+    background-color: #F2F2F8;
+    border: 1px solid #E5E5E5;
+    border-radius: 16px;
+    border-spacing: 0;
+    margin-top: 10px;
+    
+}
+
+.table-heading{
+    width: 1214px;
+    height: 44px;
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.table-heading th:nth-child(1){
+    width: 319px;
+    height: 44px;
+    border-left: none;
+    padding: 12px;
+    text-align: left;
+}
+
+.table-heading th:nth-child(2){
+    width: 894px;
+    height: 44px;
+    border-top: none;
+    border-left: 1px solid #E5E5E5;
+    padding: 12px;
+    text-align: left;
+}
+
+.About-IRCTC{
+    width: 1280px;
+    /* height: 732px; */
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.About-IRCTC h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.About-Irctc-content{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.About-Irctc-content h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 16px 0px;
+    
+}
+
+.About-Irctc-content ul{
+    padding-inline-start: 40px;
+    margin: 16px;
+}
+
+
+.Quotas-Rail_Ticket{
+    width: 1280px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.Quotas-Rail_Ticket h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.Quotas-Content{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.Quotas-Rail_Ticket ul{
+    padding-inline-start: 40px;
+    margin: 16px;
+}
+
+.Tatkal-ticket-Booking{
+    width: 1280px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.Tatkal-ticket-Booking h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+
+.Tatkal-Ticket-details{
+    color: rgba(29, 29, 29, .639);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.08px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.Tatkal-Ticket-details h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 16px 0px;
+}
+
+.FAQs-Train{
+    width: 1280px;
+    height: 615px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.FAQs-Train h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+
+
+.RedRail-Featured{
+    width: 1280px;
+    height: 116px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.RedRail-Featured h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.imageWrapper{
+    width: 1280px;
+    height: 70px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 16px;
+    /* align-items: center; */
+}
+
+.imageWrapper .Image{
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.BlogPartial{
+    width: 1280px;
+    height: 556px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.BlogPartial h2{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0px;
+}
+
+.blogItem{
+    width: 840px;
+    height: 64px;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.blogItem img{
+    width: 80px;
+    height: 64px;
+    border-radius: 8px;
+
+}
+
+.blogItem h4{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+}
+
+.blogItem span{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 4px 0px 0px;
+}
